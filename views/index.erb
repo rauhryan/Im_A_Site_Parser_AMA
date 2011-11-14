@@ -1,0 +1,20 @@
+<html>
+
+    <body>
+        <ul>
+            <% @thread.each do |comment| %>
+                <li>
+                    <strong>Q:</strong><%= comment[:question][:text] %> <a href="<%= comment[:question][:permalink] %>">link on reddit</a>
+                    <ul>
+                        <li>
+                        <strong>A:</strong> <%= comment[:answer][:text] %> <a href="<%= comment[:answer][:permalink] %>">link on reddit</a>
+                        </li>
+                    </ul>
+
+                </li>
+            <% end %>
+        </ul>
+
+    </body>
+
+</html>
