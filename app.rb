@@ -22,7 +22,7 @@ get '/:thread' do
     @doc = Reddit.get("http://www.reddit.com/r/IAmA/comments/#{params[:thread]}/.rss")
     @thread = []
     previous = nil
-    author = /submitted by <a href=".*">\s*(?<author>\w+)/.match(@doc.css("rss channel item:first").css("description").text)[:author]
+    author = /submitted by <a href=".*">\s*(?<author>\w+)/.match(@doc.css("rss channel item:first").first().css("description").text)[:author]
     puts "Author = #{author.to_s}"
     @doc.css("rss channel item").each do |node|
         r = /^<title>#{author} on/
