@@ -1,21 +1,61 @@
+<!DOCTYPE html>
 <html>
-
-    <body>
-        <ul>
-            <% @thread.each do |comment| %>
-                <li>
-					<ul>
-						<li>
-						<strong>Q:</strong><%= comment[:question][:text] %> <a href="<%= comment[:question][:permalink] %>">link on reddit</a>
-						</li>
-                        <li>
-                        <strong>A:</strong> <%= comment[:answer][:text] %> <a href="<%= comment[:answer][:permalink] %>">link on reddit</a>
-                        </li>
-                    </ul>
-
-                </li>
-            <% end %>
-        </ul>
+<head>
+	<meta charset="utf-8">
+	<title>Ask Me Anything!</title>
+	<link rel="stylesheet" href="stylesheets/screen.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/quicksand.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/chunk.css" type="text/css" media="screen" title="no title" charset="utf-8">
+	<link rel="stylesheet" href="stylesheets/960_12_col.css" type="text/css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+	<div id="wrapper" class="container_12">
+		<div class="grid_12">
+		
+			<h1 id="title"><a href="#"><%= @title %> </a></h1>
+			
+		</div>
+		<div class="clear"></div>
+		  <% @thread.each do |comment| %>
+		<div class="question">
+			<div class="grid_2">
+				<h2>Q:</h2>
+			</div>
+			<div class="grid_10">
+				<p>
+					<%= comment[:question][:text] %>
+				</p>
+			</div>
+			<div class="grid_12">
+				<nav>
+					<a href="<%= comment[:answer][:permalink] %>">Show me the answer right now!</a>
+					<a href="<%= comment[:question][:permalink] %>">Take me to Reddit immediately!</a>
+				</nav>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div class="answer">
+			<div class="grid_2">
+				<h2>A:</h2>
+			</div>
+			<div class="grid_10">
+				<p>
+				<%= comment[:answer][:text] %>
+				</p>
+			</div>
+			<div class="clear"></div>	
+		</div>
+		 <% end %>
+		 
+		 <div class="grid_12">
+			<footer>
+				<p>
+					This service is brought to you by <span><a href="https://twitter.com/#!/rauhr">Ryan Rauh</a></span> & <span><a href="https://twitter.com/#!/stewarthines">Stewart Hines</a></span>. Thanks for playing.
+				</p>
+			</footer>
+		</div>
+	</div>
+     
 
     </body>
 

@@ -1,0 +1,209 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* line 20, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+body {
+  line-height: 1;
+}
+
+/* line 22, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 24, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 26, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 28, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 101, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 30, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 114, ../../../../../Library/Ruby/Gems/1.8/gems/compass-0.11.5/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 35, ../sass/screen.scss */
+body {
+  background: url(images/bg.jpg);
+  background-color: #2f2f2f;
+  color: #eeeeee;
+  font-family: "Helvetica", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+/* line 43, ../sass/screen.scss */
+#wrapper {
+  margin-top: 50px;
+}
+
+/* line 46, ../sass/screen.scss */
+#wrapper:after {
+  clear: both;
+}
+
+/* line 47, ../sass/screen.scss */
+h1 {
+  font-size: 50px;
+  color: #e14c2f;
+  font-family: 'ChunkFiveRegular';
+  border-bottom: 1px solid #444444;
+  -webkit-box-shadow: inset 0px -2px 0px black;
+  -moz-box-shadow: inset 0px -2px 0px black;
+  box-shadow: inset 0px -2px 0px black;
+  padding-bottom: 40px;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+/* line 54, ../sass/screen.scss */
+h1:hover {
+  text-shadow: 0 8px 10px #000000;
+}
+/* line 55, ../sass/screen.scss */
+h1 a {
+  text-decoration: none;
+  color: #e14c2f;
+}
+/* line 58, ../sass/screen.scss */
+h1 a:hover {
+  text-shadow: 0 8px 10px #000000;
+}
+/* line 59, ../sass/screen.scss */
+h1 a:active {
+  color: #f7941d;
+}
+
+/* line 62, ../sass/screen.scss */
+.question {
+  margin-top: 40px;
+}
+/* line 64, ../sass/screen.scss */
+.question h2 {
+  font-size: 100px;
+  color: #2a94fe;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  font-family: 'ChunkFiveRegular';
+  margin-top: 40px;
+}
+/* line 67, ../sass/screen.scss */
+.question p {
+  font-size: 30pt;
+  line-height: 50px;
+  color: white;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  font-family: 'ChunkFiveRegular';
+}
+/* line 71, ../sass/screen.scss */
+.question nav {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 75, ../sass/screen.scss */
+.question nav a {
+  color: #eeeeee;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 5px 30px;
+  text-decoration: none;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+}
+/* line 82, ../sass/screen.scss */
+.question nav a:hover {
+  color: #e14c2f;
+  text-shadow: 0 8px 10px #000000;
+}
+/* line 83, ../sass/screen.scss */
+.question nav a:active {
+  color: #f7941d;
+}
+
+/* line 87, ../sass/screen.scss */
+.answer {
+  margin-top: 40px;
+  border-bottom: 1px solid #444444;
+  -webkit-box-shadow: inset 0px -2px 0px black;
+  -moz-box-shadow: inset 0px -2px 0px black;
+  box-shadow: inset 0px -2px 0px black;
+  padding-bottom: 40px;
+}
+/* line 90, ../sass/screen.scss */
+.answer h2 {
+  font-size: 100px;
+  color: #f7941d;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  font-family: 'ChunkFiveRegular';
+  margin-top: 40px;
+}
+/* line 93, ../sass/screen.scss */
+.answer p {
+  font-size: 30pt;
+  font-size: 30pt;
+  line-height: 50px;
+  color: #f7941d;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  font-family: 'ChunkFiveRegular';
+}
+
+/* line 97, ../sass/screen.scss */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  text-shadow: 0 5px 5px rgba(0, 0, 0, 0.8);
+  color: #eeeeee;
+}
+/* line 102, ../sass/screen.scss */
+footer a {
+  color: #e14c2f;
+  text-decoration: none;
+  font-weight: bold;
+}
+/* line 106, ../sass/screen.scss */
+footer a:hover {
+  text-shadow: 0 8px 10px #000000;
+  color: #f7941d;
+}

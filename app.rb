@@ -19,11 +19,13 @@ get '/' do
     return "welcome"
 end
 
-get '/:thread' do 
+get '/:thread/?*' do 
     @doc = Reddit.get("http://www.reddit.com/r/IAmA/comments/#{params[:thread]}/.rss")
     @thread = []
     previous = nil
-    author = /submitted by <a href=".*">\s*(\w+)/.match(@doc.css("rss channel item:first").first().css("description").text)[1]
+    title = @doc.css("rss channel item:first").first()
+    @title = title.css("title").text
+    author = /submitted by <a href=".*">\s*(\w+)/.match(title.css("description").text)[1]
     puts "Author = #{author.to_s}"
     @doc.css("rss channel item").each do |node|
         r = /^<title>#{author} on/
